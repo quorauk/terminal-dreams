@@ -1,7 +1,7 @@
 {{ define "main"}}
-<div class="section">
-  <h2 class="title is-2">{{ .Title }}</h3>
-  <span>{{ .Date.Format "2006-01-02" }} | <a href="{{ .Permalink }}">permalink</a></span>
+<div>
+  <h2 class="section title is-2">{{ .Title }}</h3>
+  <span class="section">{{ .Date.Format "2006-01-02" }} | <a href="{{ .Permalink }}">permalink</a></span>
   <article class="section">
   {{ .Content }}
   </article>
