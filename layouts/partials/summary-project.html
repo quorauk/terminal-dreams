@@ -9,7 +9,9 @@
     <a href="{{ .Params.code }}">code</a>
 {{ end }}
 {{ if (isset .Params "description") }}
-<p>
-    {{ .Description }}
-</p>
+<div class="projecttext">
+    <p >
+        {{ .Description }}
+    </p>
+</div>
 {{ end }}

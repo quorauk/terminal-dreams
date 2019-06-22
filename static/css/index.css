@@ -9,6 +9,12 @@ a {
     color: #d65d0e;
 }
 
+.projecttext {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
 #aboutme {
     max-width: 600px;
     margin: auto;
