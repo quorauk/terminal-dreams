@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main>
+      <div id="aboutme">
+       {{ .Content }}
+      </div>
+      <div>===============================================================</div>
+      <div>
+          {{ $len := len (where .Pages "Type" "posts")}}
+          {{ range $index, $element := (where .Pages "Type" "posts") }}
+            {{ if eq .Type "posts" }}
+                {{ partial "summary.html" . }}
+                {{ if not (eq (add $index 1) $len) }}
+                <div class="linebreak">---------------------------------------------------------------</div>
+                {{ end }}
+            {{ end }}
+          {{ end }}
+      </div>
+</main>
+{{ end }}

@@ -1,0 +1,9 @@
+{{ define "main" }}
+    {{ $len := len .Pages }}
+    {{ range $index, $element := .Pages }}
+    {{ partial "summary.html" . }}
+    {{ if not (eq (add $index 1) $len) }}
+    <div class="linebreak">---------------------------------------------------------------</div>
+    {{ end }}
+    {{ end }}
+{{ end }}

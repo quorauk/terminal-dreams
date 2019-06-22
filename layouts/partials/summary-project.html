@@ -1,0 +1,15 @@
+<h2 style="display: inline;">
+    {{ .Title }}
+</h2>
+    - 
+{{ if (isset .Params "site") }}
+    <a href="{{ .Params.site }}">visit</a> |
+{{ end }}
+{{ if (isset .Params "code") }}
+    <a href="{{ .Params.code }}">code</a>
+{{ end }}
+{{ if (isset .Params "description") }}
+<p>
+    {{ .Description }}
+</p>
+{{ end }}
