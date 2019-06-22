@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$orange: #fe9019;
+$orange-darker: #d65d0e;
+
+// Update Bulma's global variables
+$font-monospace: "Courier New", Courier, monospace;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $orange;
+$link-hover: $orange-darker;
+$navbar-item-color: $orange;
+$navbar-item-hover-color: $orange-darker;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+$bg: #282828;
+$fg: #ebdbb2;
+$fg0: #fbf1c7;
+$section-padding: 1rem 1rem;
+
+$navbar-background-color: $bg;
+$title-color: $fg;
+$text: $fg;
+
+// Update some of Bulma's component variables
+$body-background-color: $bg;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$family-primary: $font-monospace;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+// @import "../node_modules/bulma/sass/elements/button.sass";
+// @import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";

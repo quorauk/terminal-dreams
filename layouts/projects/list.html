@@ -1,9 +1,6 @@
 {{ define "main" }}
     {{ $len := len .Pages }}
     {{ range $index, $page := .Pages }}
-        {{ partial "summary-project" . }}
-        {{ if not (eq (add $index 1) $len) }}
-        <div class="linebreak">---------------------------------------------------------------</div>
-        {{ end }}
+      {{ partial "summary-project" . }}
     {{ end }}
 {{ end }}

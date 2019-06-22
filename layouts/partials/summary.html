@@ -1,7 +1,9 @@
-<h3>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-</h3>
-    <span>{{ .Date.Format "2006-01-02" }}</span>
-<article>
-<p>{{ .Summary }}</p>
-</article>
+<div>
+  <h2 class="section title is-2">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </h2>
+  <span class="section">{{ .Date.Format "2006-01-02" }} | <a href="{{ .Permalink }}">permalink</a></span>
+  <article class="section">
+    <p>{{ .Summary }}</p>
+  </article>
+</div>
