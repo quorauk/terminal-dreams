@@ -3,8 +3,8 @@
     <div class="section" id="aboutme">
      {{ .Content }}
     </div>
-      {{ $len := len (where .Pages "Type" "posts")}}
-      {{ range $index, $element := (where .Pages "Type" "posts") }}
+      {{ $len := len (where .Site.Pages "Type" "posts")}}
+      {{ range $index, $element := (where .Site.RegularPages "Type" "posts") }}
         {{ if eq .Type "posts" }}
             {{ partial "summary.html" . }}
             {{ if not (eq (add $index 1) $len) }}
