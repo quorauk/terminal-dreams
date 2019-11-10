@@ -44,3 +44,7 @@ $family-primary: $font-monospace;
 @import "../node_modules/bulma/sass/elements/title.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+
+p {
+    margin: 16px;
+}
