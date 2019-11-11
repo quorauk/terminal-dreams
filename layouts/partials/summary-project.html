@@ -1,19 +1,19 @@
-<div class="section">
-<h2 style="display: inline;">
-    {{ .Title }}
-</h2>
-    - 
-{{ if (isset .Params "site") }}
-    <a href="{{ .Params.site }}">visit</a> |
-{{ end }}
-{{ if (isset .Params "code") }}
-    <a href="{{ .Params.code }}">code</a>
-{{ end }}
-{{ if (isset .Params "description") }}
-<div class="projecttext">
-    <p >
-        {{ .Description }}
-    </p>
-</div>
-{{ end }}
+<div class="container section">
+    <h2 style="display: inline;">
+        {{ .Title }}
+    </h2>
+        -
+    {{ if (isset .Params "site") }}
+        <a href="{{ .Params.site }}">visit</a> |
+    {{ end }}
+    {{ if (isset .Params "code") }}
+        <a href="{{ .Params.code }}">code</a>
+    {{ end }}
+    {{ if (isset .Params "description") }}
+    <div class="projecttext">
+        <p >
+            {{ .Description }}
+        </p>
+    </div>
+    {{ end }}
 </div>
