@@ -16,9 +16,9 @@
     "publisher": "{{ $.Site.Params.Author }}",
     "accountablePerson" : "{{ $.Site.Params.Author }}",
     "copyrightHolder" : "{{ $.Site.Params.Author }}",
-    "copyrightYear" : "{{ .Date.Format "2006" }}",
-    "datePublished": "{{ .Date }}",
-    "dateModified" : "{{ .Date }}",
+    "copyrightYear" : "{{ .Date.Format "2006-01-02" }}",
+    "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "dateModified" : "{{ .Date.Format "2006-01-02" }}",
     "url" : "{{ .Permalink }}",
     "wordCount" : "{{ .WordCount }}",
     "keywords" : [ {{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}"Blog" ]
