@@ -4,12 +4,12 @@
     "@type" : "BlogPosting",
     "mainEntityOfPage": {
          "@type": "WebPage",
-         "@id": "{{ .Site.BaseURL }}"
+         "@id": "{{ .Permalink }}"
     },
     "articleSection" : "{{ .Section }}",
     "name" : "{{ .Title }}",
     "headline" : "{{ .Title }}",
-    "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+    "description" : {{ .Summary }},
     "inLanguage" : "en-US",
     "author" : "{{ $.Site.Params.Author }}",
     "creator" : "{{ $.Site.Params.Author }}",
